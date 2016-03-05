@@ -63,7 +63,7 @@ body a:hover{
     background-size: cover;
 }
 .banner-image1 {
-	background: url(../images/a1.jpg)no-repeat 0px 0px;
+	background: url(../images/a1.png)no-repeat 0px 0px;
     background-size: cover;
 }
 .banner-image2{
@@ -481,9 +481,10 @@ p {
 /*--//about grid--*/
 .trip-grids {
     padding: 3em 0;
-    background: url(../images/a.jpg)no-repeat 0px 0px;
+    background: url(../images/a.jpg)no-repeat 10px 10px;
     background-size: cover;
     text-align: center;
+    min-height:260px;
 }
 .trip-grid2 {
 	background: url(../images/a1.jpg)no-repeat 0px 0px;
@@ -1477,7 +1478,7 @@ figure.effect-bubba:hover p {
     margin-left: 0;
 }
 .logo  h1 a{
-	padding: .2em 0 .2em 0.8em;
+	/*padding: .2em 0 .2em 0.8em;*/
 }
 .banner-left {
     padding: 6em 1em 0;
@@ -2054,7 +2055,7 @@ nav {
 }
 @media(max-width:640px){
 .banner-left:after {
-    right: -26px;
+    right: 0px;
     width: 27px;
     background-size: 80%;
 }
