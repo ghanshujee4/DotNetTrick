@@ -74,8 +74,9 @@ body a:hover{
     font-size: 5em;
     /*font-family: 'Nova Script', cursive;*/
   text-align:center;
-    padding: .2em 0;
-    background:#358CCF;
+    padding: .4em 0;
+    /*background:#358CCF;*/
+    color:#fff;
 }
 .logo  h1 a{
 	color:aliceblue;
@@ -1445,7 +1446,7 @@ figure.effect-bubba:hover p {
     margin-left: 12.5em;
      background: #3BA1DA;
      text-align:center;
-     border-radius: 7%;
+     border-radius: 2%;
 }
 .logo h6 {
     letter-spacing: 5px;
