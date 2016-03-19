@@ -192,79 +192,6 @@ a.book {
 }
 /*--//banner--*/
 /*--menu-navigation--*/
-nav {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
-  position: fixed;
-  right: -220px;
-  top: 0;
-  -moz-transition: right 0.2s linear;
-  -o-transition: right 0.2s linear;
-  -webkit-transition: right 0.2s linear;
-  transition: right 0.2s linear;
-  width: 220px;
-  z-index: 9001;/* IT'S OVER 9000! */
-}
-
-nav #menuToggle {
-    background: #358CCF;
-    display: block;
-    position: relative;
-    height: 40px;
-    left: -115px;
-    top: 54px;
-    width: 46px;
-    box-shadow:5px 5px 2px 2px #381010;
-}
-
-nav #menuToggle span {
-    background: white;
-    display: block;
-    height: 10%;
-    left: 20%;
-    position: absolute;
-    top: 45%;
-    width: 60%;
-}
-
-nav #menuToggle span:before,
-nav #menuToggle span:after {
-  background: white;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: -250%;
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  width: 100%;
-}
-
-nav #menuToggle span:after { top: 250%; }
-
-nav a:nth-child(n+2) {
-	color: white;
-	display: block;
-	font-size: 1.3em;
-	margin: 30px 0 30px 30px;
-}
-nav a:nth-child(n+2):after {
-	background: #358CCF;
-	content: '';
-	display: block;
-	height: 2px;
-	-moz-transition: width 0.5s;
-	-o-transition: width 0.5s;
-	-webkit-transition: width 0.5s;
-	transition: width 0.5s;
-	width: 0;
-	margin-top: 0.2em;
-}
-nav a:nth-child(n+2):hover:after { width: 100%; }
-
-.open { right: 0; }
 
 .open #menuToggle span {
     background: transparent;
@@ -449,7 +376,7 @@ p.us{
 }
 /*-- //banner-bottom --*/
 /*--about grid--*/
-.trip,.services,.news-events,.footer,.about,.about-bottom,.codes,.gallery,.contact{
+.trip,.services,.news-events,.footer,.about-bottom,.codes,.gallery,{
     padding: 8em 0;
 }
 .trip h3.title,.services h3.title {
@@ -652,6 +579,15 @@ p.man{
 /*--footer--*/
 .footer{
 	position:relative;
+    background: #2a2a2a;
+    background: #001623 url(../images/pattern-xv.png);
+    border-top: 4px solid #1f1f1f;
+    font-size: .9em;
+    margin-top: 50px;
+    padding: 80px 0 0;
+    position: relative;
+    clear: both;
+
 }
 .footer h3 {
     font-size: 2.1em;
@@ -915,9 +851,7 @@ img.zoom-img:hover{
 }
 /*--//testimonials--*/
 /*--about-bottom--*/
-.about-bottom ,.gallery,.contact{
-    background: #F5F5F5;
-}
+
 .about-bottom-info h3.title {
     text-align: left;
     margin-bottom: .8em;
@@ -1520,6 +1454,8 @@ a.book {
 .trip, .services, .news-events, .footer, .about, .about-bottom, .codes, .gallery, .contact {
     padding: 7em 0;
 }
+
+
 .service-box p {
     margin: 0;
 }
@@ -2828,3 +2764,139 @@ nav a:nth-child(n+2) {
 }
 }
 /*--//responsive-design---*/
+.inner {
+    margin-top: 10px;
+}
+footer div.footer-ribon, div.footer-copyright, header nav ul.nav-main li.dropdown-menu:hover a {
+    background: #00420f url(/images/pattern.png) repeat center center;
+}
+footer div.container div.row>div {
+    margin-bottom: 25px;
+}
+footer div.footer-ribon {
+    background: #999;
+    position: absolute;
+    margin: -100px 0 0 22px;
+    padding: 10px 20px 6px 20px;
+}
+footer div.footer-ribon span {
+    color: #FFF;
+    font-family: "Shadows Into Light",cursive;
+    font-size: 1.6em;
+}
+footer div.footer-ribon:before {
+    border-right: 10px solid #646464;
+    border-top: 16px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+footer h4 {
+    font-size: 1.8em;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px #000;
+    border-bottom: 1px solid #121212;
+    padding: 0 0 10px 0;
+    font-weight: 600;
+}
+ul.icons {
+    list-style: none;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+footer ul.list li {
+    background: none!important;
+    padding: 0;
+}
+ul.list li {
+    color: #000;
+}
+ul.list li {
+    background: url(/images/icon-bullet.png) no-repeat 0 4px;
+    padding: 0 0 0 19px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+ul.list li {
+    margin-bottom: 13px;
+}
+footer {
+    background: #2a2a2a;
+    background: #001623 url(../images/pattern-xv.png);
+    border-top: 4px solid #1f1f1f;
+    font-size: .9em;
+    margin-top: 50px;
+    padding: 80px 0 0;
+    position: relative;
+    clear: both;
+}
+footer h4{
+
+    color: #ccc!important;
+
+}
+div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright {
+    background: #316441 url(../images/pattern.png) repeat center center !important;
+}
+footer div.footer-ribon, div.footer-copyright, header nav ul.nav-main li.dropdown-menu:hover a {
+    background: #00420f url(../images/pattern.png) repeat center center;
+}
+footer div.container div.row>div {
+    margin-bottom: 25px;
+}
+div.footer-copyright nav {
+    float: left;
+}
+copyright nav ul {
+    padding-top: 18px;
+}
+
+div.footer-copyright p, div.footer-copyright nav ul {
+    padding-top: 12px;
+    font-size: 14px;
+}
+div.footer-copyright nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+div.footer-copyright nav ul li:first-child {
+    border: medium none;
+    padding-left: 0;
+}
+div.footer-copyright nav ul li {
+    border-left: 1px dotted #fff;
+    display: inline-block;
+    line-height: 12px;
+    margin: 0;
+    padding: 0 8px;
+}
+div.footer-copyright {
+    border-top: 4px solid #aaa;
+}
+div.footer-copyright {
+    background: #242424;
+    border-top: 4px solid #22732d;
+}
+div.footer-copyright {
+    height: 120px;
+}
+div.footer-copyright {
+    padding: 45px 0 35px;
+    font-size: 135%;
+}
+div.footer-copyright {
+    height: auto!important;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
