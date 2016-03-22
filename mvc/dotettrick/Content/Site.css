@@ -611,9 +611,6 @@ p.man{
     width:40%;
 }
 
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4 {
- min-width:550px !important;
-}
 .footer.about-footer {
     margin: 0;
 }
@@ -1863,9 +1860,7 @@ h3.title, .contact h3.title {
     margin-left: 2em;
 }
 
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4 {
- min-width:550px !important;
-}
+
 .latest-news {
     margin-top: 3em;
 }
@@ -2814,6 +2809,3 @@ padding:10px;
 }
 
 
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4 {
- min-width:550px !important;
-}
