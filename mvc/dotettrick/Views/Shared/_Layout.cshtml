@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+       
+        @RenderBody()
+        <hr />
+      
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-ribon">
+                        <span>Extras</span>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Mobile First</h4>
+                        <ul class="list icons list-unstyled">
+                            <li><a class="iphone" href="https://itunes.apple.com/us/app/tutorials-point/id914891263?ls=1&amp;mt=8" target="_blank" rel="nofollow"><img alt="tutorialspoint iPhone App" src="../images/apple_store.jpg" class="mobile-apps"></a></li>
+                            <li><a class="android" href="https://play.google.com/store/apps/details?id=com.tutorialspoint.onlineviewer" target="_blank" rel="nofollow"><img alt="tutorialspoint Android app" src="../images/google_play.jpg" class="mobile-apps"></a></li>
+                            <li><a class="microsoft" href="http://www.windowsphone.com/s?appid=91249671-7184-4ad6-8a5f-d11847946b09" target="_blank" rel="nofollow"><img alt="tutorialspoint Windows app" src="../images/windows_store.jpg" class="mobile-apps"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>About us</h4>
+                        <ul class="list icons list-unstyled">
+                            <li><i class="icon icon-caret-right"></i> <a href="/about/index.htm">Company</a></li>
+                            <li><i class="icon icon-caret-right"></i> <a href="/about/about_team.htm">Team</a></li>
+                            <li><i class="icon icon-caret-right"></i> <a href="/about/about_careers.htm">Careers</a></li>
+                            <li><i class="icon icon-caret-right"></i> <a href="/about/about_privacy.htm">Privacy Policy</a></li>
+                            <li><i class="icon icon-caret-right"></i> <a href="/about/about_terms_of_use.htm">Terms of use</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Extra Links</h4>
+                        <ul class="list icons list-unstyled">
+                            <li><i class="icon icon-caret-right"></i> <a href="/forums/index.php">Forums</a></li>
+                            <li><i class="icon icon-caret-right"></i> <a href="shorttutorials">Articles</a></li>
+                            <li><i class="icon icon-caret-right"></i> <a href="shared-tutorials.php">Shared</a></li>
+                            <li><i class="icon icon-caret-right"></i> <a href="seo_tools.htm">Seo Tools</a></li>
+                            <li><i class="icon icon-caret-right"></i> <a href="questions_and_answers.htm">Questions/Answers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-details">
+                            <h4>Contact Us</h4>
+                            <ul class="contact">
+                                <li><p><i class="icon icon-map-marker"></i> <strong>Address:</strong> 388-A , Road no 22, Jubilee Hills, Hyderabad Telangana, INDIA-500033</p></li>
+                                <li><p><i class="icon icon-envelope"></i> <strong>Email:</strong> <a href="about/contact_us.htm">Click Here</a></p></li>
+                                <li><p><i class="icon icon-dribbble"></i> <strong>Website:</strong> <a href="http://www.tutorialspoint.com">www.tutorialspoint.com</a></p></li>
+                            </ul>
+                        </div>
+                        <div class="social-icons">
+                            <ul>
+                                <li class="facebook"><a href="https://www.facebook.com/tutorialspointindia" target="_blank" data-placement="bottom" title="tutorialspoint Facebook"><img src="../images/f1.png" alt=""> </a></li>
+                                <li class="googleplus"><a href="https://plus.google.com/u/0/116678774017490391259/posts" target="_blank" data-placement="bottom"><img src="../images/f2.png" alt=""> </a></li>
+                                <li class="linkedin"><a href="http://www.linkedin.com/company/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint Linkedin"><img src="../images/f3.png" alt=""> </a></li>
+                                <li class="twitter"><a href="http://www.twitter.com/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint Twitter"><img src="../images/f4.png" alt=""></a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <a href="index.htm" class="logo"> <img alt="Tutorials Point" class="img-responsive" src="/scripts/img/logo-footer.png"> </a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <nav id="sub-menu">
+                                <ul>
+                                    <li><a href="/about/tutorials_writing.htm">Write for us</a></li>
+                                    <li><a href="/about/faq.htm">FAQ's</a></li>
+                                    <li><a href="/about/about_helping.htm">Helping</a></li>
+                                    <li><a href="/about/contact_us.htm">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <p>© Copyright 2016. All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="news-group">
+                                <input type="text" class="form-control-foot search" name="textemail" id="textemail" autocomplete="off" placeholder="Enter email for newsletter" onfocus="if (this.value == 'Enter email for newsletter...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter email for newsletter...';}">
+                                <span class="input-group-btn"> <button class="btn btn-default btn-footer" id="btnemail" type="submit" onclick="javascript:void(0);">go</button> </span>
+                                <div id="newsresponse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
