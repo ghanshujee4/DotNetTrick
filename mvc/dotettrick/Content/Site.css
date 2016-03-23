@@ -13,7 +13,7 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 480px;
 }
 
 /* styles for validation helpers */
@@ -598,7 +598,7 @@ p.man{
     min-height: 250px;
 }
 .banner-left.about-banner-left, .about-banner-right .banner-image {
-    min-height: 300px;
+    min-height: 50px;
 }
 .about-banner-left.banner-left h2 {
     margin-top: 2em;
@@ -1203,7 +1203,7 @@ figure.effect-bubba:hover p {
     margin-top: 2em;
 }
 .contact-form input[type="text"] {
-    width: 37%;
+    width: 100%;
     color: #999;
     background: none;
     outline: none;
